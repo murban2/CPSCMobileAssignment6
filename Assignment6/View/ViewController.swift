@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         }
         
         //instantiate object and set values
-        var currencyObject = CurrencyConverter(usd: Int(usdField.text!)!)
+        let currencyObject = CurrencyConverter(usd: Int(usdField.text!)!)
         
         currencyObject.setCurrencies(euroStatus: euroSwitch.isOn, cadStatus: cadSwitch.isOn, yenStatus: yenSwitch.isOn, rubleStatus: rubleSwitch.isOn)
         
